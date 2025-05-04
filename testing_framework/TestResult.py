@@ -22,9 +22,3 @@ class TestResult:
         return f'{self.run_count} {self.RUN_MSG}, ' \
                f'{str(len(self.failures))} {self.FAILURE_MSG}, ' \
                f'{str(len(self.errors))} {self.ERROR_MSG}'
-    
-# class TestCase:
-
-#     def run(self, result):
-#         result.test_started()
-
