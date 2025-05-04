@@ -23,8 +23,8 @@ class TestResult:
                f'{str(len(self.failures))} {self.FAILURE_MSG}, ' \
                f'{str(len(self.errors))} {self.ERROR_MSG}'
     
-class TestCase:
+# class TestCase:
 
-    def run(self, result):
-        result.test_started()
+#     def run(self, result):
+#         result.test_started()
 

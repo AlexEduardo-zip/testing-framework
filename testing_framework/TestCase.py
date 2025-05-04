@@ -1,6 +1,5 @@
 
-from TestResult import TestResult
-
+from testing_framework.TestResult import TestResult
 
 class TestCase:
 
@@ -27,6 +26,8 @@ class TestCase:
 
     def result(self, result):
         result.test_started()
+    
+    
 
 class MyTest(TestCase):
 
@@ -44,16 +45,3 @@ class MyTest(TestCase):
 
     def test_c(self):
         print('test_c')
-
-result = TestResult()
-
-test = MyTest('test_a')
-test.run(result)
-
-test = MyTest('test_b')
-test.run(result)
-
-test = MyTest('test_c')
-test.run(result)
-
-print(result.summary())
