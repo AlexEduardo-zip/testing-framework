@@ -1,4 +1,5 @@
-from testing_framework.TestCase import TestCase, TestResult
+from testing_framework.TestCase import TestCase
+from testing_framework.TestResult import TestResult
 from tests.test_stub import TestStub
 from tests.test_spy import TestSpy
 
